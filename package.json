@@ -1,8 +1,10 @@
 {
+    "name": "portfolio_nrbedin",
+    "version": "1.0.0",
     "scripts": {
         "deploy": "flutter build web && gh-pages -d build/web"
     },
-    "dependencies": {
-        "gh-pages": "^6.2.0"
+    "devDependencies": {
+        "gh-pages": "^3.2.3"
     }
 }
