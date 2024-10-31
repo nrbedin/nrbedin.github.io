@@ -1,9 +1,9 @@
-# portifolio_nrbedin
-
 # Naiara Rafaela Bedin - Portfólio
 
+Link: https://nrbedin.github.io/
+
 ## :dart: Sobre
-Este é o portfólio de Naiara Rafaela Bedin, graduada em Ciência da Computação e desenvolvedora com mais de uma década de experiência em TI. Aqui, você encontrará detalhes sobre minhas habilidades, experiências e alguns dos projetos que desenvolvi.
+Este é o portfólio de Naiara Rafaela Bedin, graduada em Ciência da Computação, com mais de uma década de experiência em TI. Aqui, você encontrará detalhes sobre minhas habilidades, experiências e alguns dos projetos que desenvolvi.
 
 - **Flutter version**: 3.22.1
 
@@ -27,14 +27,14 @@ As seguintes ferramentas foram usadas na construção deste portfólio:
 ## :computer: Projetos
 Alguns dos projetos que desenvolvi:
 - **Loja Virtual**: Aplicativo de comércio eletrônico que permite pedidos de comida, como pizzas, doces e lanches, através de login. Inclui carrinho de compras, lista de produtos e finalização de pedidos, com opção de consultar status de entrega.
-- **Projeto 2**: Descrição breve do projeto 2.
-- **Projeto 3**: Descrição breve do projeto 3.
+- **Delivery Bida**: Um sistema de backoffice utilizando Flutter WEB com arquitetura MVC com Designer Pattern Repository e Service utilizando os package Modular e MobX.
+- **OhMyDog**: Aplicativo para petshop desenvolvido em Flutter, utilizando Modular e MobX. Facilita agendamentos e gerenciamento de serviços para pets, proporcionando uma experiência integrada e eficiente para os clientes.
 
 ## :mailbox_with_mail: Contato
 Desenvolvido por Naiara Rafaela Bedin. Para saber mais sobre mim ou sobre meus projetos, entre em contato através dos links abaixo:
 
-GitHub: nrbedin
+GitHub: https://github.com/nrbedin
 
-LinkedIn: naiara-bedin
+LinkedIn: https://www.linkedin.com/in/naiara-bedin/
 
 Email: nrbedin@gmail.com
