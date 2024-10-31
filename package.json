@@ -5,6 +5,6 @@
         "deploy": "flutter build web && gh-pages -d build/web"
     },
     "devDependencies": {
-        "gh-pages": "^3.2.3"
+        "gh-pages": "^6.2.0"
     }
 }
