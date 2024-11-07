@@ -43,6 +43,9 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
+    final double screenWidth = MediaQuery.of(context).size.width;
+    final bool isMobile = screenWidth < 600;
+
     return Scaffold(
       appBar: appBar(),
       drawer: sideMenu(),
@@ -63,6 +66,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                     label2: 'Habilidades',
                     route2: const SkillsPage(),
                     icon2: Icons.emoji_objects_rounded,
+                    isMobile: isMobile,
                   ),
                   const SizedBox(height: 20),
                   buttonRow(
@@ -73,6 +77,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                     label2: 'Projetos',
                     route2: const ProjectsPage(),
                     icon2: Icons.construction,
+                    isMobile: isMobile,
                   ),
                   const SizedBox(height: 20),
                 ],
@@ -85,7 +90,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
     );
   }
 
-  Row buttonRow({
+  Widget buttonRow({
     required BuildContext context,
     required String label1,
     required Widget route1,
@@ -93,6 +98,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
     required String label2,
     required Widget route2,
     required IconData icon2,
+    required bool isMobile,
   }) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -103,6 +109,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             route: route1,
             label: label1,
             icon: icon1,
+            isMobile: isMobile,
           ),
         ),
         const SizedBox(width: 10),
@@ -112,6 +119,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             route: route2,
             label: label2,
             icon: icon2,
+            isMobile: isMobile,
           ),
         ),
       ],
@@ -123,12 +131,13 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
     required Widget route,
     required String label,
     required IconData icon,
+    required bool isMobile,
   }) {
     return Card(
       color: const Color(0xFF003C52),
       elevation: 5.0,
       child: SizedBox(
-        height: 170,
+        height: isMobile ? 120 : 170,
         child: ElevatedButton(
           style: raisedButtonStyle,
           onPressed: () {
@@ -142,7 +151,14 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               children: [
                 Icon(icon, size: 40, color: Colors.white),
                 const SizedBox(height: 10),
-                Text(label, style: const TextStyle(fontSize: 18.0)),
+                Text(
+                  label,
+                  style: TextStyle(
+                    fontSize: isMobile ? 14.0 : 18.0,
+                    color: Colors.white,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
               ],
             ),
           ),

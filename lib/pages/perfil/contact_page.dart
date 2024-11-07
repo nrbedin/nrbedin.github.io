@@ -83,7 +83,7 @@ class ContactPage extends StatelessWidget {
                       ),
                       const SizedBox(height: 10),
                       const ChatMessage(
-                        message: "Você me encontra aqui:",
+                        message: "Aqui estão meus contatos:",
                         isUser: false,
                       ),
                       const SizedBox(height: 20),
