@@ -68363,8 +68363,8 @@ $0(){this.a.ob(this.b.c)},
 $S:0}
 A.oK.prototype={}
 A.FR.prototype={
-M(a){var s=null,r="Hard Skills",q="L\xf3gica de Programa\xe7\xe3o",p="Soft Skills",o="Comunica\xe7\xe3o eficaz e cooperativa",n="Resolu\xe7\xe3o de problemas",m=A.bK(a,s,t.w).w,l=A.Oa(),k=A.On(),j=A.ci(s,s,B.p,s,s,B.cS,s,s,s,s,s,s,s),i=t.s,h=t.D
-return A.vx(l,A.iI(B.br,A.b([j,A.jh(A.vX(new A.c1(B.kV,m.a.a<600?A.dM(A.b([A.a8H(r,A.b(["Flutter e Dart","Material Design","Firebase","GitHub","MariaDB","PostgreSQL","AWS","Docker",q,"SQL","JiraTrelloQualidade de Software","Delphi"],i)),B.aS,A.a8H(p,A.b([o,n,"Organiza\xe7\xe3o","Proatividade","Lideran\xe7a","Gest\xe3o de Projetos","Trabalho em Equipe"],i))],h),B.d2,B.S,B.U):A.mj(A.b([A.nS(A.dM(A.b([A.a8H(r,A.b(["Flutter e Dart","Material Design","Firebase","GitHub",q,"SQL","Qualidade de Software","Delphi"],i))],h),B.Y,B.S,B.U)),B.dL,A.nS(A.dM(A.b([A.a8H(p,A.b([o,n,"Organiza\xe7\xe3o","Proatividade","Lideran\xe7a"],i))],h),B.Y,B.S,B.U))],h),B.d2,B.S,B.U),s),s),s,s)],h),B.bm),k,s)}}
+M(a){var s=null,r="Hard Skills",q="L\xf3gica de Programa\xe7\xe3o",p="JiraTrelloQualidade de Software",o="Soft Skills",n="Comunica\xe7\xe3o eficaz e cooperativa",m="Resolu\xe7\xe3o de problemas",l="Gest\xe3o de Projetos",k="Trabalho em Equipe",j=A.bK(a,s,t.w).w,i=A.Oa(),h=A.On(),g=A.ci(s,s,B.p,s,s,B.cS,s,s,s,s,s,s,s),f=t.s,e=t.D
+return A.vx(i,A.iI(B.br,A.b([g,A.jh(A.vX(new A.c1(B.kV,j.a.a<600?A.dM(A.b([A.a8H(r,A.b(["Flutter e Dart","Material Design","Firebase","GitHub","MariaDB","PostgreSQL","AWS","Docker",q,"SQL",p,"Delphi"],f)),B.aS,A.a8H(o,A.b([n,m,"Organiza\xe7\xe3o","Proatividade","Lideran\xe7a",l,k],f))],e),B.d2,B.S,B.U):A.mj(A.b([A.nS(A.dM(A.b([A.a8H(r,A.b(["Flutter e Dart","Material Design","Firebase","GitHub","MariaDB","PostgreSQL","AWS","Docker",q,"SQL",p,"Delphi"],f))],e),B.Y,B.S,B.U)),B.dL,A.nS(A.dM(A.b([A.a8H(o,A.b([n,m,"Organiza\xe7\xe3o","Proatividade","Lideran\xe7a",l,k],f))],e),B.Y,B.S,B.U))],e),B.d2,B.S,B.U),s),s),s,s)],e),B.bm),h,s)}}
 A.a8I.prototype={
 $1(a){var s=null,r=A.i2(10)
 return A.nm(A.ci(s,A.af4(B.Bt,s,A.pk(a,B.dQ,s)),B.p,s,s,s,s,s,s,B.cl,s,s,s),B.aX,s,B.B0,new A.bC(r,B.o))},
