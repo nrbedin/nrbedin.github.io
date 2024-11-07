@@ -7,6 +7,9 @@ class SkillsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final double screenWidth = MediaQuery.of(context).size.width;
+    final bool isMobile = screenWidth < 600;
+
     return Scaffold(
       appBar: appBar(),
       drawer: sideMenu(),
@@ -17,52 +20,96 @@ class SkillsPage extends StatelessWidget {
             child: SingleChildScrollView(
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Expanded(
-                      child: Column(
-                        children: [
-                          cardHardSoft(
-                            'Hard Skills',
-                            [
-                              'Flutter e Dart',
-                              'Material Design',
-                              'Firebase',
-                              'GitHub',
-                              'Lógica de Programação',
-                              'SQL',
-                              'Qualidade de Software',
-                              'Delphi'
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                    const SizedBox(width: 10),
-                    Expanded(
-                      child: Column(
-                        children: [
-                          cardHardSoft(
-                            'Soft Skills',
-                            [
-                              'Comunicação eficaz e cooperativa',
-                              'Resolução de problemas',
-                              'Organização',
-                              'Proatividade',
-                              'Liderança'
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
+                child: isMobile ? buildColumnLayout() : buildRowLayout(),
               ),
             ),
           ),
         ],
       ),
+    );
+  }
+
+  Widget buildRowLayout() {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Expanded(
+          child: Column(
+            children: [
+              cardHardSoft(
+                'Hard Skills',
+                [
+                  'Flutter e Dart',
+                  'Material Design',
+                  'Firebase',
+                  'GitHub',
+                  'Lógica de Programação',
+                  'SQL',
+                  'Qualidade de Software',
+                  'Delphi',
+                ],
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(width: 10),
+        Expanded(
+          child: Column(
+            children: [
+              cardHardSoft(
+                'Soft Skills',
+                [
+                  'Comunicação eficaz e cooperativa',
+                  'Resolução de problemas',
+                  'Organização',
+                  'Proatividade',
+                  'Liderança',
+                ],
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget buildColumnLayout() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        cardHardSoft(
+          'Hard Skills',
+          [
+            'Flutter e Dart',
+            'Material Design',
+            'Firebase',
+            'GitHub',
+            'MariaDB',
+            'PostgreSQL',
+            'AWS',
+            'Docker',
+            'Lógica de Programação',
+            'SQL',
+            'Jira'
+                'Trello'
+                'Qualidade de Software',
+            'Delphi',
+          ],
+        ),
+        const SizedBox(height: 10),
+        cardHardSoft(
+          'Soft Skills',
+          [
+            'Comunicação eficaz e cooperativa',
+            'Resolução de problemas',
+            'Organização',
+            'Proatividade',
+            'Liderança',
+            'Gestão de Projetos',
+            'Trabalho em Equipe',
+          ],
+        ),
+      ],
     );
   }
 }
