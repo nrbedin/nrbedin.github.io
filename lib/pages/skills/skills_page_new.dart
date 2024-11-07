@@ -49,9 +49,9 @@ class SkillsPage extends StatelessWidget {
                   'Docker',
                   'Lógica de Programação',
                   'SQL',
-                  'Jira'
-                      'Trello'
-                      'Qualidade de Software',
+                  'Jira',
+                  'Trello',
+                  'Qualidade de Software',
                   'Delphi',
                 ],
               ),
@@ -98,9 +98,9 @@ class SkillsPage extends StatelessWidget {
             'Docker',
             'Lógica de Programação',
             'SQL',
-            'Jira'
-                'Trello'
-                'Qualidade de Software',
+            'Jira',
+            'Trello',
+            'Qualidade de Software',
             'Delphi',
           ],
         ),
