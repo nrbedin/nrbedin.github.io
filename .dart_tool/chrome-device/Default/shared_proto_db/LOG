@@ -1,16 +1,14 @@
-2024/11/06-23:00:13.850 1724 Reusing MANIFEST C:\Users\jhona\AppData\Local\Temp\flutter_tools.93e07e54\flutter_tools_chrome_device.bae9da5\Default\shared_proto_db/MANIFEST-000001
-2024/11/06-23:00:13.852 1724 Recovering log #19
-2024/11/06-23:00:13.859 1724 Reusing old log C:\Users\jhona\AppData\Local\Temp\flutter_tools.93e07e54\flutter_tools_chrome_device.bae9da5\Default\shared_proto_db/000019.log 
-2024/11/06-23:00:13.862 1724 Delete type=0 #3
-2024/11/06-23:00:13.862 1724 Delete type=0 #4
-2024/11/06-23:00:13.863 1724 Delete type=0 #7
-2024/11/06-23:00:13.863 1724 Delete type=2 #8
-2024/11/06-23:00:13.864 1724 Delete type=0 #10
-2024/11/06-23:00:13.864 1724 Delete type=2 #11
-2024/11/06-23:00:13.864 1724 Delete type=0 #13
-2024/11/06-23:00:13.865 1724 Delete type=2 #14
-2024/11/06-23:00:13.865 1724 Delete type=0 #16
-2024/11/06-23:00:13.866 1724 Delete type=2 #17
-2024/11/06-23:00:38.120 1724 Level-0 table #24: started
-2024/11/06-23:00:38.132 1724 Level-0 table #24: 136385 bytes OK
-2024/11/06-23:00:38.135 1724 Delete type=0 #19
+2024/11/06-23:48:41.414 1f00 Reusing MANIFEST C:\Users\jhona\AppData\Local\Temp\flutter_tools.a51b6545\flutter_tools_chrome_device.2a4d2d62\Default\shared_proto_db/MANIFEST-000001
+2024/11/06-23:48:41.415 1f00 Recovering log #23
+2024/11/06-23:48:41.416 1f00 Reusing old log C:\Users\jhona\AppData\Local\Temp\flutter_tools.a51b6545\flutter_tools_chrome_device.2a4d2d62\Default\shared_proto_db/000023.log 
+2024/11/06-23:48:41.416 1f00 Delete type=0 #3
+2024/11/06-23:48:41.416 1f00 Delete type=0 #4
+2024/11/06-23:48:41.416 1f00 Delete type=0 #7
+2024/11/06-23:48:41.416 1f00 Delete type=2 #8
+2024/11/06-23:48:41.416 1f00 Delete type=0 #10
+2024/11/06-23:48:41.416 1f00 Delete type=2 #11
+2024/11/06-23:48:41.417 1f00 Delete type=0 #13
+2024/11/06-23:48:41.417 1f00 Delete type=2 #14
+2024/11/06-23:48:41.417 1f00 Delete type=0 #16
+2024/11/06-23:48:41.417 1f00 Delete type=2 #17
+2024/11/06-23:48:41.417 1f00 Delete type=0 #19
