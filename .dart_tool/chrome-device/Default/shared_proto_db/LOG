@@ -1,7 +1,16 @@
-2024/11/05-23:44:44.886 1a3c Reusing MANIFEST C:\Users\jhona\AppData\Local\Temp\flutter_tools.47247ba4\flutter_tools_chrome_device.638b5ebd\Default\shared_proto_db/MANIFEST-000001
-2024/11/05-23:44:44.888 1a3c Recovering log #13
-2024/11/05-23:44:44.889 1a3c Reusing old log C:\Users\jhona\AppData\Local\Temp\flutter_tools.47247ba4\flutter_tools_chrome_device.638b5ebd\Default\shared_proto_db/000013.log 
-2024/11/05-23:44:44.889 1a3c Delete type=0 #3
-2024/11/05-23:44:44.890 1a3c Delete type=0 #4
-2024/11/05-23:44:44.890 1a3c Delete type=0 #7
-2024/11/05-23:44:44.890 1a3c Delete type=0 #10
+2024/11/06-23:00:13.850 1724 Reusing MANIFEST C:\Users\jhona\AppData\Local\Temp\flutter_tools.93e07e54\flutter_tools_chrome_device.bae9da5\Default\shared_proto_db/MANIFEST-000001
+2024/11/06-23:00:13.852 1724 Recovering log #19
+2024/11/06-23:00:13.859 1724 Reusing old log C:\Users\jhona\AppData\Local\Temp\flutter_tools.93e07e54\flutter_tools_chrome_device.bae9da5\Default\shared_proto_db/000019.log 
+2024/11/06-23:00:13.862 1724 Delete type=0 #3
+2024/11/06-23:00:13.862 1724 Delete type=0 #4
+2024/11/06-23:00:13.863 1724 Delete type=0 #7
+2024/11/06-23:00:13.863 1724 Delete type=2 #8
+2024/11/06-23:00:13.864 1724 Delete type=0 #10
+2024/11/06-23:00:13.864 1724 Delete type=2 #11
+2024/11/06-23:00:13.864 1724 Delete type=0 #13
+2024/11/06-23:00:13.865 1724 Delete type=2 #14
+2024/11/06-23:00:13.865 1724 Delete type=0 #16
+2024/11/06-23:00:13.866 1724 Delete type=2 #17
+2024/11/06-23:00:38.120 1724 Level-0 table #24: started
+2024/11/06-23:00:38.132 1724 Level-0 table #24: 136385 bytes OK
+2024/11/06-23:00:38.135 1724 Delete type=0 #19
