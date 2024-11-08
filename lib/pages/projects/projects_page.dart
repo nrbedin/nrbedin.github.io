@@ -197,7 +197,7 @@ final List<Projeto> projetos = [
         children: [
           TextSpan(
               text:
-                  'É uma plataforma de comércio eletrônico desenvolvida para facilitar pedidos de comida, incluindo pizzas, doces e lanches.\nAtravés de um sistema de login, os usuários podem acessar uma lista de produtos, adicionar itens ao carrinho de compras, e finalizar pedidos de forma prática e rápida.\n\n'),
+                  'É uma plataforma de comércio eletrônico desenvolvida para facilitar pedidos de fast food e sobremesas, incluindo pizzas, doces e lanches.\nAtravés de um sistema de login, os usuários podem acessar uma lista de produtos, adicionar itens ao carrinho de compras, e finalizar pedidos de forma prática e rápida.\n\n'),
           TextSpan(
               text:
                   '- Permite que os usuários se registrem e façam login para acessar a loja;\n\n',
@@ -262,7 +262,7 @@ final List<Projeto> projetos = [
 //  Projeto(
 //    nome: "Loja Virtual - Flutter",
 //    descricao:
-//        '''É uma plataforma de comércio eletrônico desenvolvida para facilitar pedidos de comida, incluindo pizzas, doces e lanches.
+//        '''É uma plataforma de comércio eletrônico desenvolvida para facilitar pedidos de fast food e sobremesas, incluindo pizzas, doces e lanches.
 //           Através de um sistema de login, os usuários podem acessar uma lista de produtos, adicionar itens ao carrinho de compras, e finalizar pedidos de forma prática e rápida.\n
 //              - Permite que os usuários se registrem e façam login para acessar a loja;\n
 //              - Exibe uma lista de produtos disponíveis, permitindo aos usuários adicionar itens ao carrinho;\n
