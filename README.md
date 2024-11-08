@@ -26,7 +26,7 @@ As seguintes ferramentas foram usadas na construção deste portfólio:
 
 ## :computer: Projetos
 Alguns dos projetos que desenvolvi:
-- **Loja Virtual**: Aplicativo de comércio eletrônico que permite pedidos de comida, como pizzas, doces e lanches, através de login. Inclui carrinho de compras, lista de produtos e finalização de pedidos, com opção de consultar status de entrega.
+- **Loja Virtual**: Aplicativo de comércio eletrônico que permite pedidos de fast food e sobremesas, como pizzas, doces e lanches, através de login. Inclui carrinho de compras, lista de produtos e finalização de pedidos, com opção de consultar status de entrega.
 - **Delivery Bida**: Um sistema de backoffice utilizando Flutter WEB com arquitetura MVC com Designer Pattern Repository e Service utilizando os package Modular e MobX.
 - **OhMyDog**: Aplicativo para petshop desenvolvido em Flutter, utilizando Modular e MobX. Facilita agendamentos e gerenciamento de serviços para pets, proporcionando uma experiência integrada e eficiente para os clientes.
 

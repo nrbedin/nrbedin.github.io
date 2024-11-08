@@ -78,7 +78,7 @@ class ExperiencePage extends StatelessWidget {
                                   ),
                                 ),
                                 Text(
-                                  'Principais atribuições: Diagnóstico e resolução de problemas de hardware e software,configurações de sistemas, suporte a redes, instalações de softwares, treinamentos de usuários e manutenção preventiva. Além disso, desempenhava um papel crucial na garantia da disponibilidade e desempenho dos sistemas, assegurando que as operações de T.I. ocorram de forma eficiente e sem interrupções significativas.',
+                                  'Principais atribuições: Diagnóstico e resolução de problemas de hardware e software, configurações de sistemas, suporte a redes, instalações de softwares, treinamentos de usuários e manutenção preventiva. Além disso, desempenhava um papel crucial na garantia da disponibilidade e desempenho dos sistemas, assegurando que as operações de T.I. ocorram de forma eficiente e sem interrupções significativas.',
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 15,
@@ -90,7 +90,7 @@ class ExperiencePage extends StatelessWidget {
                                   height: 10,
                                 ),
                                 Text(
-                                  'Analista de Qualidade de Software (Julho/2014 – Fevereiro/2023)',
+                                  'Desenvolvimento de importação de dados em Delphi (Julho/2015 – Fevereiro/2023)',
                                   textAlign: TextAlign.start,
                                   style: TextStyle(
                                     color: Colors.white,
@@ -100,7 +100,29 @@ class ExperiencePage extends StatelessWidget {
                                   ),
                                 ),
                                 Text(
-                                  'Execução de testes manuais no ERP próprio da empresa, com foco na identificação de possíveis bug’s e garantia da qualidade do software. Realização de análise e desenvolvimento de importação de dados em Delphi, assegurando a integridade e consistência das informações processadas pelo sistema. Além de colaboração ativa no ciclo de vida do desenvolvimento de software, participando de reuniões de planejamento e interagindo com as equipes de desenvolvimento para compreender requisitos e cenários de teste.',
+                                  'Desenvolvi processos de importação de dados em Delphi para migrações de sistemas, garantindo a transferência precisa das informações. Criei ferramentas para detectar e resolver divergências nos dados durante a migração, além de gerar relatórios detalhados de inconsistências, facilitando a correção e assegurando a integridade dos dados transferidos.',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 15,
+                                    //fontFamily: 'Montserrat',
+                                  ),
+                                  textAlign: TextAlign.justify,
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Text(
+                                  'Analista de Qualidade de Software (Julho/2014 – Novembro/2023)',
+                                  textAlign: TextAlign.start,
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w600,
+                                    fontFamily: 'Montserrat',
+                                  ),
+                                ),
+                                Text(
+                                  'Execução de testes manuais no ERP próprio da empresa, com foco na identificação de possíveis bugs e garantia da qualidade do software, assegurando a integridade e consistência das informações processadas pelo sistema. Além disso, elaboração de casos de teste para os projetos, colaborando ativamente no ciclo completo de desenvolvimento de software, participando de reuniões de planejamento e interagindo com as equipes de desenvolvimento para compreender requisitos e cenários de teste.',
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 15,
@@ -122,7 +144,7 @@ class ExperiencePage extends StatelessWidget {
                                   ),
                                 ),
                                 Text(
-                                  'Desenvolvimento de aplicativos para Android e iOS utilizando a tecnologia Flutter, garantindo uma experiência de usuário consistente e de alta qualidade. Responsável pela publicação dos aplicativos nas respectivas lojas (Google Play Store e Apple App Store), assegurando conformidade com as diretrizes e padrões estabelecidos por cada plataforma. Além de atuar no ciclo completo de desenvolvimento de software, desde a concepção e análise de requisitos até o desenvolvimento e manutenção. Com conhecimento em tecnologias como: Dart, SQL, MariaDB,SQFlite, Firebase, AWS, Jira, Github e consumo de APIs Rest.',
+                                  'Desenvolvimento de aplicativos para Android e iOS utilizando a tecnologia Flutter, garantindo uma experiência de usuário consistente e de alta qualidade. Responsável pela publicação dos aplicativos nas respectivas lojas (Google Play Store e Apple App Store), assegurando conformidade com as diretrizes e padrões estabelecidos por cada plataforma. Além disso, atuando no ciclo completo de desenvolvimento de software, desde a concepção e análise de requisitos até o desenvolvimento e manutenção. Com conhecimento em tecnologias como: Dart, SQL, MariaDB,SQFlite, Firebase, AWS, Jira, Github e consumo de APIs Rest.',
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 15,
