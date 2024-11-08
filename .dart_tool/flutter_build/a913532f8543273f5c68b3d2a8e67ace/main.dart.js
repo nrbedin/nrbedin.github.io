@@ -68226,10 +68226,10 @@ A.Dv.prototype={
 M(a){return new A.ua(B.Jq,"Portf\xf3lio",A.agt(null,!0),!1,null)}}
 A.Aa.prototype={
 M(a){var s=null,r=A.Oa(),q=A.On(),p=t.D
-return A.vx(r,A.iI(B.br,A.b([A.ci(s,s,B.p,s,s,B.cU,s,s,s,s,s,s,s),A.jh(A.vX(new A.c1(B.kW,A.dM(A.b([A.nn(B.Gm,B.aX,s,s,new A.bC(A.i2(16),B.o))],p),B.Y,B.id,B.U),s),s),s,s)],p),B.bn),q,s)}}
+return A.vx(r,A.iI(B.br,A.b([A.ci(s,s,B.p,s,s,B.cU,s,s,s,s,s,s,s),A.jh(A.vX(new A.c1(B.kW,A.dM(A.b([A.nn(B.Gn,B.aX,s,s,new A.bC(A.i2(16),B.o))],p),B.Y,B.id,B.U),s),s),s,s)],p),B.bn),q,s)}}
 A.C7.prototype={
 M(a){var s=null,r=A.Oa(),q=A.On(),p=A.ci(s,s,B.p,s,s,B.cU,s,s,s,s,s,s,s),o=A.i2(20),n=t.D
-return A.vx(r,A.iI(B.br,A.b([p,A.vX(A.dM(A.b([A.nn(new A.c1(B.AX,A.dM(A.b([B.wu,B.OX,B.bD,A.ci(s,B.Go,B.p,s,s,new A.cz(B.x,s,s,A.i2(15),s,s,B.ap),s,s,s,s,s,s,s),B.aK],n),B.kC,B.S,B.U),s),B.aX,s,s,new A.bC(o,B.o))],n),B.Y,B.S,B.U),B.kV)],n),B.bn),q,s)}}
+return A.vx(r,A.iI(B.br,A.b([p,A.vX(A.dM(A.b([A.nn(new A.c1(B.AX,A.dM(A.b([B.wu,B.OX,B.bD,A.ci(s,B.Gm,B.p,s,s,new A.cz(B.x,s,s,A.i2(15),s,s,B.ap),s,s,s,s,s,s,s),B.aK],n),B.kC,B.S,B.U),s),B.aX,s,s,new A.bC(o,B.o))],n),B.Y,B.S,B.U),B.kV)],n),B.bn),q,s)}}
 A.lw.prototype={
 aj(){return new A.J3(null,null,B.k)}}
 A.J3.prototype={
@@ -72635,19 +72635,7 @@ B.Gj=new A.DN(0,"portrait")
 B.Gk=new A.DN(1,"landscape")
 B.Gl=new A.uE(null)
 B.bF=new A.GD(1,"down")
-B.xh=new A.nf("assets/images/perfil.png",null,null)
-B.zi=new A.ri(null,B.i,B.xh,70,null)
 B.bD=new A.ff(null,20,null,null)
-B.wI=new A.j(!0,B.i,null,"Montserrat",null,null,25,B.er,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.P9=new A.cY("Sobre Mim",null,B.wI,null,null)
-B.AV=new A.aI(20,0,20,0)
-B.NG=new A.j(!0,B.i,null,null,null,null,15,null,null,null,null,null,1.5,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.P2=new A.cY("Naiara Rafaela Bedin - Graduada em Ci\xeancia da Computa\xe7\xe3o.\n\nCom mais de uma d\xe9cada de experi\xeancia no campo da tecnologia da informa\xe7\xe3o, desenvolvi uma trajet\xf3ria marcada por desafios e conquistas. Minha atua\xe7\xe3o abrange suporte t\xe9cnico, qualidade de software e, atualmente, desenvolvimento de software.\n\nMinha carreira \xe9 guiada por um compromisso constante com a excel\xeancia e a busca cont\xednua por aprimoramento. Como Analista Desenvolvedora Flutter, trabalho em projetos de aplicativos para Android e iOS, sempre focada em proporcionar uma experi\xeancia de usu\xe1rio consistente e de alta qualidade.",null,B.NG,B.b7,null)
-B.Gn=new A.c1(B.AV,B.P2,null)
-B.wu=new A.ff(null,30,null,null)
-B.Cu=A.b(s([B.zi,B.bD,B.P9,B.bD,B.Gn,B.wu]),t.D)
-B.Ac=new A.nx(B.aW,B.S,B.U,B.Y,null,B.bF,null,B.Cu,null)
-B.Gm=new A.c1(B.kW,B.Ac,null)
 B.wH=new A.j(!0,B.i,null,"Montserrat",null,null,20,B.bR,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Pa=new A.cY("Accesys Solutions",null,B.wH,null,null)
 B.aK=new A.ff(null,10,null,null)
@@ -72663,7 +72651,19 @@ B.OZ=new A.cY("Analista Desenvolvedora Flutter (Fevereiro/2023 \u2013 Atualmente
 B.P4=new A.cY("Desenvolvimento de aplicativos para Android e iOS utilizando a tecnologia Flutter, garantindo uma experi\xeancia de usu\xe1rio consistente e de alta qualidade. Respons\xe1vel pela publica\xe7\xe3o dos aplicativos nas respectivas lojas (Google Play Store e Apple App Store), assegurando conformidade com as diretrizes e padr\xf5es estabelecidos por cada plataforma. Al\xe9m disso, atuando no ciclo completo de desenvolvimento de software, desde a concep\xe7\xe3o e an\xe1lise de requisitos at\xe9 o desenvolvimento e manuten\xe7\xe3o. Com conhecimento em tecnologias como: Dart, SQL, MariaDB,SQFlite, Firebase, AWS, Jira, Github e consumo de APIs Rest.",null,B.cI,B.b7,null)
 B.DG=A.b(s([B.bD,B.Pa,B.aK,B.P5,B.P0,B.aK,B.P7,B.P_,B.aK,B.P6,B.P1,B.aK,B.OZ,B.P4,B.aK]),t.D)
 B.Ab=new A.nx(B.aW,B.S,B.U,B.Y,null,B.bF,null,B.DG,null)
-B.Go=new A.c1(B.kX,B.Ab,null)
+B.Gm=new A.c1(B.kX,B.Ab,null)
+B.xh=new A.nf("assets/images/perfil.png",null,null)
+B.zi=new A.ri(null,B.i,B.xh,70,null)
+B.wI=new A.j(!0,B.i,null,"Montserrat",null,null,25,B.er,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.P9=new A.cY("Sobre Mim",null,B.wI,null,null)
+B.AV=new A.aI(20,0,20,0)
+B.NG=new A.j(!0,B.i,null,null,null,null,15,null,null,null,null,null,1.5,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.P2=new A.cY("Naiara Rafaela Bedin - Graduada em Ci\xeancia da Computa\xe7\xe3o.\n\nCom mais de uma d\xe9cada de experi\xeancia no campo da tecnologia da informa\xe7\xe3o, desenvolvi uma trajet\xf3ria marcada por desafios e conquistas. Minha atua\xe7\xe3o abrange suporte t\xe9cnico, qualidade de software, desenvolvimento de importa\xe7\xe3o de dados em delphi, atualmente em desenvolvimento de software.\n\nMinha carreira \xe9 guiada por um compromisso constante com a excel\xeancia e a busca cont\xednua por aprimoramento. Como Analista Desenvolvedora Flutter, trabalho em projetos de aplicativos para Android e iOS, sempre focada em proporcionar uma experi\xeancia de usu\xe1rio consistente e de alta qualidade.",null,B.NG,B.b7,null)
+B.Go=new A.c1(B.AV,B.P2,null)
+B.wu=new A.ff(null,30,null,null)
+B.Cu=A.b(s([B.zi,B.bD,B.P9,B.bD,B.Go,B.wu]),t.D)
+B.Ac=new A.nx(B.aW,B.S,B.U,B.Y,null,B.bF,null,B.Cu,null)
+B.Gn=new A.c1(B.kW,B.Ac,null)
 B.Gp=new A.uI(null)
 B.b2=new A.Eb(0,"fill")
 B.a4=new A.Eb(1,"stroke")
