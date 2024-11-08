@@ -51,7 +51,7 @@ class AboutPage extends StatelessWidget {
                               child: Text(
                                 '''Naiara Rafaela Bedin - Graduada em Ciência da Computação.
 
-Com mais de uma década de experiência no campo da tecnologia da informação, desenvolvi uma trajetória marcada por desafios e conquistas. Minha atuação abrange suporte técnico, qualidade de software e, atualmente, desenvolvimento de software.
+Com mais de uma década de experiência no campo da tecnologia da informação, desenvolvi uma trajetória marcada por desafios e conquistas. Minha atuação abrange suporte técnico, qualidade de software, desenvolvimento de importação de dados em delphi, atualmente em desenvolvimento de software.
 
 Minha carreira é guiada por um compromisso constante com a excelência e a busca contínua por aprimoramento. Como Analista Desenvolvedora Flutter, trabalho em projetos de aplicativos para Android e iOS, sempre focada em proporcionar uma experiência de usuário consistente e de alta qualidade.''',
                                 style: TextStyle(
