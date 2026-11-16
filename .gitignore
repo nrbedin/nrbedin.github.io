@@ -1,23 +1,9 @@
-# Flutter specific
-build/
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.packages
-.pub-cache
-.flutter-versions
-
-# IntelliJ and Android Studio specific
-.idea/
-*.iml
-
-# VS Code specific
-.vscode/
-
-# Flutter dependencies
 node_modules/
-
-# Others
+dist/
+coverage/
+*.tsbuildinfo
 *.log
-*.tmp
-*.swp
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea/
