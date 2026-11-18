@@ -1,36 +1,34 @@
+import { Header } from './components/Header'
+import { About } from './sections/About'
+import { Contact } from './sections/Contact'
+import { Education } from './sections/Education'
+import { Experience } from './sections/Experience'
+import { Hero } from './sections/Hero'
+import { Skills } from './sections/Skills'
 import { profile } from './content/profile'
 import styles from './App.module.css'
 
 export function App() {
-  const { email, linkedin, github } = profile.links
-
   return (
-    <main className={styles.page}>
-      <div className={styles.content}>
-        <p className={styles.badge}>Site em construção</p>
-        <h1 className={styles.name}>{profile.name}</h1>
-        <p className={styles.title}>{profile.title}</p>
-        <p className={styles.tagline}>{profile.tagline}</p>
-        <ul className={styles.links}>
-          <li>
-            <a className={`${styles.link} ${styles.primary}`} href={linkedin} rel="noopener">
-              LinkedIn
-            </a>
-          </li>
-          <li>
-            <a className={styles.link} href={github} rel="noopener">
-              GitHub
-            </a>
-          </li>
-          {email && (
-            <li>
-              <a className={styles.link} href={email}>
-                E-mail
-              </a>
-            </li>
-          )}
-        </ul>
-      </div>
-    </main>
+    <>
+      <a href="#conteudo" className={styles.skipLink}>
+        Pular para o conteúdo
+      </a>
+      <Header />
+      <main id="conteudo" tabIndex={-1}>
+        <Hero />
+        <About />
+        <Experience />
+        <Education />
+        <Skills />
+        <Contact />
+      </main>
+      <footer className={styles.footer}>
+        <p>
+          © {new Date().getFullYear()} {profile.name} · Feito com React e TypeScript ·{' '}
+          <a href="https://github.com/nrbedin/nrbedin.github.io">código-fonte</a>
+        </p>
+      </footer>
+    </>
   )
 }
