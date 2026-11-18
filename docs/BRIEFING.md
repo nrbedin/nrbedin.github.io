@@ -1,6 +1,6 @@
 # Briefing — Novo portfólio nrbedin.github.io
 
-> Documento vivo: atualizar a cada fase. Última revisão: 16/11/2026.
+> Documento vivo: atualizar a cada fase. Última revisão: 18/11/2026.
 
 > **Para o Claude Code:** este arquivo é a especificação completa do novo portfólio da Naiara Bedin. Leia tudo antes de começar. Trabalhe **por fases** (seção 9) e pare ao fim de cada uma para revisão. Use **somente** os fatos deste documento: não invente números, clientes, empresas, nomes de produto ou resultados. Onde faltar informação, deixe `TODO:` visível e avise.
 
@@ -91,7 +91,7 @@ nrbedin.github.io/
 ### Migração do repositório
 
 1. ✅ Branch `legacy-flutter` criada a partir da `main` (04/11/2026), preservando o código-fonte Flutter completo.
-2. 🟡 (feito na `feat/novo-portfolio`) Na `main`, remover o projeto Flutter (`lib/`, `android/`, `ios/`, `build/`, `.dart_tool/` etc., que hoje estão versionados) e o script `gh-pages` do `package.json`, e criar o projeto Vite.
+2. ✅ Na `main`, remover o projeto Flutter (`lib/`, `android/`, `ios/`, `build/`, `.dart_tool/` etc., que hoje estão versionados) e o script `gh-pages` do `package.json`, e criar o projeto Vite.
 3. Configurar o Pages para GitHub Actions (hoje a fonte é a branch `gh-pages`) e validar o deploy.
 4. Depois do deploy novo validado, apagar a branch `gh-pages` (o build antigo pode ser regenerado a partir da `legacy-flutter`).
 5. Atualizar o README de `portfolio_nrbedin` com uma nota: "Versão anterior do portfólio (Flutter Web). Versão atual: nrbedin.github.io".
@@ -299,9 +299,9 @@ Demonstração pública de detecção facial com prova de vida usando Google ML 
 
 ## 9. Plano de execução por fases
 
-**Fase 1 — Base.** 🟡 _Código pronto na branch `feat/novo-portfolio` (16/11/2026): Vite + React + TS, CSS Modules, ESLint/Prettier, Vitest, workflow `deploy.yml` e página "em construção". Falta: merge na `main` e trocar a fonte do Pages para GitHub Actions._ Criar a branch `legacy-flutter`, montar o projeto Vite + TS, lint, workflow de deploy e uma página "em construção". Validar que o Pages publica. ⏸ _Parar para revisão._
+**Fase 1 — Base.** ✅ _Concluída em 18/11/2026 (PR #1). Site no ar via GitHub Actions._ Criar a branch `legacy-flutter`, montar o projeto Vite + TS, lint, workflow de deploy e uma página "em construção". Validar que o Pages publica. ⏸ _Parar para revisão._
 
-**Fase 2 — Conteúdo e layout.** Hero, Sobre, Experiência, Formação, Tecnologias e Contato, com o conteúdo vindo de `src/content`. Tema claro e escuro. ⏸ _Parar para revisão._
+**Fase 2 — Conteúdo e layout.** 🟡 _Em revisão (branch `feat/fase-2-conteudo`): menu fixo, Hero, Sobre, Experiência, Formação, Tecnologias, Contato, tema claro/escuro com botão, link "pular para o conteúdo". Botões de currículo e e-mail ficam ocultos até os campos `cv` e `email` serem preenchidos em `src/content/profile.ts`._ Hero, Sobre, Experiência, Formação, Tecnologias e Contato, com o conteúdo vindo de `src/content`. Tema claro e escuro. ⏸ _Parar para revisão._
 
 **Fase 3 — Estudos de caso.** Os três casos, com diagramas SVG. ⏸ _Parar para revisão._
 

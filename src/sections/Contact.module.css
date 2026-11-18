@@ -1,0 +1,11 @@
+.text {
+  max-width: 60ch;
+  font-size: 1.075rem;
+  margin: 0 0 24px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
