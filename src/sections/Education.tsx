@@ -1,5 +1,5 @@
 import { Section } from '../components/Section'
-import { certificates, certificatesIssuer, degrees } from '../content/education'
+import { certificates, degrees, languages } from '../content/education'
 import styles from './Education.module.css'
 
 export function Education() {
@@ -12,17 +12,38 @@ export function Education() {
             <p className={styles.meta}>
               {degree.institution} · {degree.detail}
             </p>
+            {degree.description && <p className={styles.description}>{degree.description}</p>}
           </li>
         ))}
       </ul>
-      <h3 className={styles.subheading}>Certificados · {certificatesIssuer}</h3>
-      <ul className={styles.certificates}>
-        {certificates.map((cert) => (
-          <li key={cert.title}>
-            {cert.title} <span className={styles.year}>{cert.year}</span>
-          </li>
-        ))}
-      </ul>
+
+      <div className={styles.columns}>
+        <div>
+          <h3 className={styles.subheading}>Certificados e cursos</h3>
+          <ul className={styles.list}>
+            {certificates.map((cert) => (
+              <li key={cert.title}>
+                <span className={styles.itemTitle}>{cert.title}</span>
+                <span className={styles.itemMeta}>
+                  {cert.issuer}
+                  {cert.date && ` · ${cert.date}`}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h3 className={styles.subheading}>Idiomas</h3>
+          <ul className={styles.list}>
+            {languages.map((lang) => (
+              <li key={lang.name}>
+                <span className={styles.itemTitle}>{lang.name}</span>
+                <span className={styles.itemMeta}>{lang.level}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </Section>
   )
 }

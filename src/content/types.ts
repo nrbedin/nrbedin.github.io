@@ -3,11 +3,19 @@ export interface Link {
   href: string
 }
 
+export interface HighlightArea {
+  title: string
+  items: string[]
+}
+
 export interface ExperienceRole {
   role: string
   period: string
   summary?: string
-  notes?: string[]
+  /** Tópicos soltos (cargos mais simples). */
+  bullets?: string[]
+  /** Tópicos agrupados por área (cargo atual). */
+  areas?: HighlightArea[]
 }
 
 export interface ExperienceGroup {
@@ -20,11 +28,18 @@ export interface Degree {
   title: string
   institution: string
   detail: string
+  description?: string
 }
 
 export interface Certificate {
   title: string
-  year: number
+  issuer: string
+  date: string
+}
+
+export interface Language {
+  name: string
+  level: string
 }
 
 export interface SkillGroup {
