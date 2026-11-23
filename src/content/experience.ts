@@ -26,10 +26,12 @@ export const experience: ExperienceGroup[] = [
             ],
           },
           {
-            title: 'Publicação nas lojas e iOS',
+            title: 'Apps white-label para Android e iOS',
             items: [
-              'Publicação e manutenção contínua dos aplicativos Android e iOS na Google Play e na App Store, mantendo as versões atualizadas e de acordo com as exigências de cada loja.',
-              'Validação e ajustes de código específicos para iOS, para que os apps Flutter funcionem da mesma forma nas duas plataformas.',
+              'Criação e configuração de novos aplicativos white-label por flavor a partir de uma única base Flutter: identidade visual, ícones, ambientes e build por cliente.',
+              'Geração e publicação de AAB e IPA para cada flavor na Google Play e na App Store, com automação por Makefile e pipeline no Codemagic.',
+              'Manutenção contínua dos apps nas lojas, incluindo adequações a novas exigências, como o suporte a páginas de memória de 16 KB do Android.',
+              'Validação e ajustes específicos para iOS: configuração no Xcode e notificações push com Firebase e Notification Service Extension.',
             ],
           },
           {
@@ -39,7 +41,8 @@ export const experience: ExperienceGroup[] = [
               'Fluxos de loja autônoma: pareamento multi-tenant do dispositivo, identificação de cliente (CPF e OTP via SMS/WhatsApp), carrinho, cupons e pós-venda com acionamento remoto de travas e geladeiras.',
               'Integração com periféricos: leitores de código (USB-HID, câmera e BLE), impressoras POS e travas Bluetooth (ESP32) com protocolo autenticado.',
               'Builds multi-flavor (Flavorizr) por adquirente e fabricante, automação de compilação com Makefiles, atualização remota via OTA (Shorebird) e redesign completo da interface.',
-              'Resiliência e observabilidade: sessão em Hive, fila offline de retentativa de pagamentos em SQLite, telemetria, health check e comandos remotos com OpenObserve.',
+              'Resiliência e observabilidade: sessão em Hive, fila offline de retentativa de pagamentos em SQLite, telemetria, health check, logs estruturados no OpenObserve e script de relatório operacional.',
+              'Suporte ao CNPJ alfanumérico no fluxo de venda, antecipando a mudança nacional do formato.',
             ],
           },
           {
@@ -58,6 +61,8 @@ export const experience: ExperienceGroup[] = [
               'Prova de vida (liveness) com desafios comportamentais (piscar, sorrir e virar a cabeça), com cálculo geométrico de ângulos e conversão de coordenadas entre câmera e tela.',
               'Pacote Flutter próprio e reutilizável, com API pública configurável e implementações nativas para Android e iOS.',
               'Otimização do pipeline de câmera (throttling de frames, foco e exposição automáticos, calibração de limiares) para tablets Android de baixo custo.',
+              'Monitoramento de saúde do aparelho (status, permissões e timeouts), coberto por testes automatizados.',
+              'Manutenção do plugin de detecção facial animada usado pelo app.',
             ],
           },
           {

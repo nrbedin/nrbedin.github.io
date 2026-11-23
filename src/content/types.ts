@@ -47,7 +47,7 @@ export interface SkillGroup {
   items: string[]
 }
 
-export type DiagramId = 'payments' | 'lockers'
+export type DiagramId = 'payments' | 'lockers' | 'whitelabel' | 'facial'
 
 export interface CaseStudy {
   id: string
@@ -61,4 +61,27 @@ export interface CaseStudy {
   result?: string
   technologies: string[]
   diagram?: DiagramId
+}
+
+export type ProjectStatus = 'estável' | 'em evolução'
+
+export interface FeaturedProject {
+  id: string
+  name: string
+  description: string
+  stack: string[]
+  repo: string
+  demo?: string
+  /** Página do pacote no pub.dev, se houver. */
+  pubdev?: string
+  status: ProjectStatus
+  /** Só aparece no site quando true (depois que o repositório existir). */
+  published: boolean
+}
+
+export interface StudyProject {
+  name: string
+  description: string
+  stack: string[]
+  repo: string
 }

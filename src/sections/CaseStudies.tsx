@@ -1,6 +1,8 @@
 import type { ReactNode } from 'react'
+import { FacialDiagram } from '../components/diagrams/FacialDiagram'
 import { LockersDiagram } from '../components/diagrams/LockersDiagram'
 import { PaymentsDiagram } from '../components/diagrams/PaymentsDiagram'
+import { WhiteLabelDiagram } from '../components/diagrams/WhiteLabelDiagram'
 import { Section } from '../components/Section'
 import { cases } from '../content/cases'
 import type { CaseStudy, DiagramId } from '../content/types'
@@ -9,6 +11,8 @@ import styles from './CaseStudies.module.css'
 const diagrams: Record<DiagramId, () => ReactNode> = {
   payments: PaymentsDiagram,
   lockers: LockersDiagram,
+  whitelabel: WhiteLabelDiagram,
+  facial: FacialDiagram,
 }
 
 function Technologies({ items }: { items: string[] }) {

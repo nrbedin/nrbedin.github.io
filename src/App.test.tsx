@@ -4,6 +4,7 @@ import { App } from './App'
 import { navigation } from './content/navigation'
 import { profile } from './content/profile'
 import { cases } from './content/cases'
+import { publishedProjects, studyProjects } from './content/projects'
 import { skills } from './content/skills'
 
 describe('App', () => {
@@ -41,12 +42,28 @@ describe('App', () => {
     for (const study of cases) {
       expect(screen.getByRole('heading', { level: 3, name: study.title })).toBeInTheDocument()
     }
-    expect(
-      screen.getByRole('img', { name: /Arquitetura do checkout multi-gateway/ }),
-    ).toBeInTheDocument()
-    expect(
-      screen.getByRole('img', { name: /Arquitetura do controle de lockers/ }),
-    ).toBeInTheDocument()
+    const diagramas = [
+      /Arquitetura do checkout multi-gateway/,
+      /Pipeline dos apps white-label/,
+      /Pipeline de reconhecimento facial on-device/,
+      /Arquitetura do controle de lockers/,
+    ]
+    for (const name of diagramas) {
+      expect(screen.getByRole('img', { name })).toBeInTheDocument()
+    }
+  })
+
+  it('mostra os projetos de estudo e esconde destaques não publicados', () => {
+    render(<App />)
+    for (const project of studyProjects) {
+      expect(screen.getByRole('link', { name: new RegExp(project.name) })).toHaveAttribute(
+        'href',
+        project.repo,
+      )
+    }
+    const destaque = screen.queryByRole('heading', { name: 'Projetos em destaque' })
+    if (publishedProjects().length === 0) expect(destaque).toBeNull()
+    else expect(destaque).toBeInTheDocument()
   })
 
   it('o botão principal leva aos estudos de caso', () => {

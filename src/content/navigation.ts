@@ -2,6 +2,7 @@
 export const navigation = [
   { id: 'sobre', label: 'Sobre' },
   { id: 'casos', label: 'Estudos de caso' },
+  { id: 'projetos', label: 'Projetos' },
   { id: 'experiencia', label: 'Experiência' },
   { id: 'formacao', label: 'Formação' },
   { id: 'tecnologias', label: 'Tecnologias' },
