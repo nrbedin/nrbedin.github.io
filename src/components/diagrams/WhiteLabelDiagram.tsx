@@ -11,7 +11,7 @@ const FLAVORS = [
 export function WhiteLabelDiagram() {
   return (
     <svg
-      viewBox="0 0 360 400"
+      viewBox="0 0 360 500"
       className={styles.svg}
       role="img"
       aria-labelledby="diagrama-white-label-titulo diagrama-white-label-desc"
@@ -20,7 +20,8 @@ export function WhiteLabelDiagram() {
       <desc id="diagrama-white-label-desc">
         Uma única base Flutter gera um flavor por cliente. Um pipeline com Makefile e Codemagic
         produz o AAB para Android e o IPA para iOS de cada flavor, publicados na Google Play e na
-        App Store.
+        App Store. No totem, a identidade visual de cada cliente vem sem novo build: o app baixa de
+        uma CDN na AWS as cores e o logo, valida e guarda em cache.
       </desc>
       <ArrowMarkers id={M} />
 
@@ -54,6 +55,14 @@ export function WhiteLabelDiagram() {
       <Arrow x1={260} y1={308} x2={260} y2={340} marker={M} />
       <Box x={40} y={342} w={120} h={44} label="Google Play" />
       <Box x={200} y={342} w={120} h={44} label="App Store" />
+
+      <line x1={10} y1={408} x2={350} y2={408} className={styles.boundary} />
+      <text x={180} y={428} textAnchor="middle" className={styles.note}>
+        sem novo build · totem
+      </text>
+      <Box x={15} y={440} w={135} h={50} label="CDN (AWS S3)" sub="cores e logo" />
+      <Arrow x1={150} y1={465} x2={208} y2={465} marker={M} />
+      <Box x={210} y={440} w={135} h={50} accent label="Totem" sub="valida e guarda" />
     </svg>
   )
 }
