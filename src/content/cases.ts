@@ -57,8 +57,8 @@ export const cases: CaseStudy[] = [
     decisions: [
       'Tudo o que muda de um cliente para outro é configuração, não código: corrigir um bug corrige todos os apps de uma vez.',
       'Tratar a adequação às lojas como trabalho contínuo, por exemplo o suporte a páginas de memória de 16 KB exigido pela Google Play.',
-      'Nada vindo de fora é aplicado sem validação: cor fora do formato volta ao padrão, e imagem acima de 1 MB, que não abre ou que não vem da própria CDN é recusada.',
-      'Funcionar sem rede: a identidade fica em cache, o ETag evita baixar de novo o que não mudou e, se a CDN falhar, o totem segue com a última marca salva.',
+      'Nada vindo de fora é aplicado sem validação: cor fora do formato volta ao padrão, e imagem grande demais, que não abre ou que não vem da própria CDN é recusada.',
+      'Funcionar sem rede: a marca fica em cache, o ETag evita baixar de novo o que não mudou e, se a CDN falhar, o totem segue com a última marca salva.',
       'Falha parcial não apaga a marca: se só o logo novo falhar, ficam as cores novas e o logo anterior.',
     ],
     result:
