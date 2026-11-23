@@ -46,3 +46,19 @@ export interface SkillGroup {
   group: string
   items: string[]
 }
+
+export type DiagramId = 'payments' | 'lockers'
+
+export interface CaseStudy {
+  id: string
+  title: string
+  /** 'full' = bloco largo com diagrama; 'compact' = cartão menor. */
+  variant: 'full' | 'compact'
+  context: string
+  challenge?: string
+  approach?: string[]
+  decisions?: string[]
+  result?: string
+  technologies: string[]
+  diagram?: DiagramId
+}

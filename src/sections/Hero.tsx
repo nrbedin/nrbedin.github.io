@@ -13,13 +13,15 @@ export function Hero() {
         <p className={styles.title}>{profile.title}</p>
         <p className={styles.tagline}>{profile.tagline}</p>
         <div className={styles.actions}>
-          {/* TODO (Fase 3): botão "Ver estudos de caso" quando a seção existir. */}
+          <ButtonLink variant="primary" href="#casos">
+            Ver estudos de caso
+          </ButtonLink>
           {cv && (
-            <ButtonLink variant="primary" href={cv} download>
+            <ButtonLink href={cv} download>
               Baixar currículo (PDF)
             </ButtonLink>
           )}
-          <ButtonLink variant={cv ? 'secondary' : 'primary'} href={linkedin} external>
+          <ButtonLink href={linkedin} external>
             LinkedIn
           </ButtonLink>
           <ButtonLink href={github} external>
