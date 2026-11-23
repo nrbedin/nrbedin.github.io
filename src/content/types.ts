@@ -47,7 +47,7 @@ export interface SkillGroup {
   items: string[]
 }
 
-export type DiagramId = 'payments' | 'lockers'
+export type DiagramId = 'payments' | 'lockers' | 'whitelabel' | 'facial'
 
 export interface CaseStudy {
   id: string

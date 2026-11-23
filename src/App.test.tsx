@@ -42,12 +42,15 @@ describe('App', () => {
     for (const study of cases) {
       expect(screen.getByRole('heading', { level: 3, name: study.title })).toBeInTheDocument()
     }
-    expect(
-      screen.getByRole('img', { name: /Arquitetura do checkout multi-gateway/ }),
-    ).toBeInTheDocument()
-    expect(
-      screen.getByRole('img', { name: /Arquitetura do controle de lockers/ }),
-    ).toBeInTheDocument()
+    const diagramas = [
+      /Arquitetura do checkout multi-gateway/,
+      /Pipeline dos apps white-label/,
+      /Pipeline de reconhecimento facial on-device/,
+      /Arquitetura do controle de lockers/,
+    ]
+    for (const name of diagramas) {
+      expect(screen.getByRole('img', { name })).toBeInTheDocument()
+    }
   })
 
   it('mostra os projetos de estudo e esconde destaques não publicados', () => {
