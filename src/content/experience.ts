@@ -1,7 +1,6 @@
 import type { ExperienceGroup } from './types'
 
 // Fonte: currículo (mesmas informações públicas do LinkedIn).
-// Regra: sem código, prints ou números internos (ver docs/BRIEFING.md, seção 3).
 export const experience: ExperienceGroup[] = [
   {
     organization: 'Accesys Solutions',
