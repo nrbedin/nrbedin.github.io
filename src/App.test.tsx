@@ -66,6 +66,22 @@ describe('App', () => {
     else expect(destaque).toBeInTheDocument()
   })
 
+  it('o contato mostra e-mail, telefone e o currículo em PDF', () => {
+    render(<App />)
+    expect(screen.getByRole('link', { name: profile.contact.email })).toHaveAttribute(
+      'href',
+      profile.links.email,
+    )
+    expect(screen.getByRole('link', { name: profile.contact.phone })).toHaveAttribute(
+      'href',
+      profile.links.phone,
+    )
+    expect(screen.getByRole('link', { name: 'Currículo (PDF)' })).toHaveAttribute(
+      'href',
+      profile.links.cv,
+    )
+  })
+
   it('o botão principal leva aos estudos de caso', () => {
     render(<App />)
     expect(screen.getByRole('link', { name: 'Ver estudos de caso' })).toHaveAttribute(
@@ -85,9 +101,9 @@ describe('App', () => {
   it('o botão de tema alterna entre claro e escuro', async () => {
     const user = userEvent.setup()
     render(<App />)
-    await user.click(screen.getByRole('button', { name: 'Ativar tema claro' }))
+    await user.click(screen.getByRole('button', { name: 'Alternar entre tema claro e escuro' }))
     expect(document.documentElement.dataset.theme).toBe('light')
-    await user.click(screen.getByRole('button', { name: 'Ativar tema escuro' }))
+    await user.click(screen.getByRole('button', { name: 'Alternar entre tema claro e escuro' }))
     expect(document.documentElement.dataset.theme).toBe('dark')
   })
 })

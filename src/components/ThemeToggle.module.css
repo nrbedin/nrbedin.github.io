@@ -24,3 +24,26 @@
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+
+/* Tema escuro (padrão): mostra o sol, para ir ao claro. */
+.moon {
+  display: none;
+}
+
+:global(:root[data-theme='light']) .sun {
+  display: none;
+}
+
+:global(:root[data-theme='light']) .moon {
+  display: block;
+}
+
+@media (prefers-color-scheme: light) {
+  :global(:root:not([data-theme='dark'])) .sun {
+    display: none;
+  }
+
+  :global(:root:not([data-theme='dark'])) .moon {
+    display: block;
+  }
+}

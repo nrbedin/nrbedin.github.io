@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://nrbedin.github.io/sitemap.xml

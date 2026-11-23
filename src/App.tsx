@@ -29,7 +29,7 @@ export function App() {
       </main>
       <footer className={styles.footer}>
         <p>
-          © {new Date().getFullYear()} {profile.name} · Feito com React e TypeScript ·{' '}
+          © {__BUILD_YEAR__} {profile.name} · Feito com React e TypeScript ·{' '}
           <a href="https://github.com/nrbedin/nrbedin.github.io">código-fonte</a>
         </p>
       </footer>
