@@ -66,6 +66,22 @@ describe('App', () => {
     else expect(destaque).toBeInTheDocument()
   })
 
+  it('o contato mostra e-mail, telefone e o currículo em PDF', () => {
+    render(<App />)
+    expect(screen.getByRole('link', { name: profile.contact.email })).toHaveAttribute(
+      'href',
+      profile.links.email,
+    )
+    expect(screen.getByRole('link', { name: profile.contact.phone })).toHaveAttribute(
+      'href',
+      profile.links.phone,
+    )
+    expect(screen.getByRole('link', { name: 'Currículo (PDF)' })).toHaveAttribute(
+      'href',
+      profile.links.cv,
+    )
+  })
+
   it('o botão principal leva aos estudos de caso', () => {
     render(<App />)
     expect(screen.getByRole('link', { name: 'Ver estudos de caso' })).toHaveAttribute(

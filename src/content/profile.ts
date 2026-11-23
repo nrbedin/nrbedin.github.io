@@ -15,12 +15,18 @@ export const profile = {
     'Hardware e IoT',
     'Visão computacional on-device',
   ],
+  contact: {
+    // Exibidos na seção Contato. Deixe vazio para ocultar.
+    email: 'nrbedin@gmail.com',
+    phone: '+55 (16) 99722-9193',
+  },
   links: {
-    // TODO: Naiara preenche o e-mail de contato (ex.: 'mailto:seu@email'). Vazio = link oculto.
-    email: '',
+    email: 'mailto:nrbedin@gmail.com',
+    phone: 'tel:+5516997229193',
+    whatsapp: 'https://wa.me/5516997229193',
     linkedin: 'https://www.linkedin.com/in/naiara-bedin',
     github: 'https://github.com/nrbedin',
-    // TODO: colocar o PDF em public/cv/ e preencher com '/cv/Curriculo_Naiara_Bedin.pdf'. Vazio = botão oculto.
-    cv: '',
+    // PDF em public/cv/. Vazio = botões de currículo ocultos.
+    cv: '/cv/Curriculo_Naiara_Bedin.pdf',
   },
 }
