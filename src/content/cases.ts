@@ -52,13 +52,17 @@ export const cases: CaseStudy[] = [
       'Uma única base Flutter, com um flavor por cliente: identidade visual, ícones, nome, ambientes e identificadores de loja.',
       'Builds AAB (Android) e IPA (iOS) automatizados com Makefile e um pipeline no Codemagic que percorre a lista de flavors.',
       'No iOS: configuração por flavor no Xcode e notificações push com Firebase e Notification Service Extension.',
+      'No totem, a identidade visual chega sem nova versão do app: ele baixa de uma CDN na AWS as cores, o logo e o modo claro/escuro do cliente, valida e guarda localmente.',
     ],
     decisions: [
       'Tudo o que muda de um cliente para outro é configuração, não código: corrigir um bug corrige todos os apps de uma vez.',
       'Tratar a adequação às lojas como trabalho contínuo, por exemplo o suporte a páginas de memória de 16 KB exigido pela Google Play.',
+      'Nada vindo de fora é aplicado sem validação: cor fora do formato volta ao padrão, e imagem acima de 1 MB, que não abre ou que não vem da própria CDN é recusada.',
+      'Funcionar sem rede: a identidade fica em cache, o ETag evita baixar de novo o que não mudou e, se a CDN falhar, o totem segue com a última marca salva.',
+      'Falha parcial não apaga a marca: se só o logo novo falhar, ficam as cores novas e o logo anterior.',
     ],
     result:
-      'Publicar o app de um novo cliente passou a ser configuração e pipeline, e não um projeto novo.',
+      'Publicar o app de um novo cliente passou a ser configuração e pipeline, e não um projeto novo; no totem, trocar a marca de um cliente passou a ser publicar um arquivo.',
     technologies: [
       'Flutter',
       'Flavors',
@@ -68,6 +72,8 @@ export const cases: CaseStudy[] = [
       'Codemagic',
       'Makefile',
       'Firebase',
+      'AWS S3',
+      'CDN',
     ],
     diagram: 'whitelabel',
   },
