@@ -1,0 +1,54 @@
+.svg {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.box {
+  fill: var(--color-surface);
+  stroke: var(--color-border);
+  stroke-width: 1.5;
+}
+
+.accent {
+  fill: var(--color-surface-2);
+  stroke: var(--color-accent);
+}
+
+.label {
+  fill: var(--color-heading);
+  font: 600 13px var(--font-sans);
+}
+
+.sub {
+  fill: var(--color-text-muted);
+  font: 500 10.5px var(--font-mono);
+}
+
+.note {
+  fill: var(--color-text-muted);
+  font: 500 10px var(--font-mono);
+}
+
+.line {
+  stroke: var(--color-text-muted);
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.boundary {
+  stroke: var(--color-border);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 5;
+}
+
+.pill {
+  fill: var(--color-bg);
+  stroke: var(--color-border);
+}
+
+.arrowHead {
+  fill: var(--color-text-muted);
+}

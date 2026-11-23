@@ -1,5 +1,6 @@
 import { Header } from './components/Header'
 import { About } from './sections/About'
+import { CaseStudies } from './sections/CaseStudies'
 import { Contact } from './sections/Contact'
 import { Education } from './sections/Education'
 import { Experience } from './sections/Experience'
@@ -18,6 +19,7 @@ export function App() {
       <main id="conteudo" tabIndex={-1}>
         <Hero />
         <About />
+        <CaseStudies />
         <Experience />
         <Education />
         <Skills />

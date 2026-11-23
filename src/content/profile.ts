@@ -1,7 +1,7 @@
 // Textos do perfil. Edite aqui sem mexer nos componentes.
 export const profile = {
   name: 'Naiara Bedin',
-  title: 'Desenvolvedora de Software · Pagamentos TEF/POS · Android · IoT',
+  title: 'Desenvolvedora de Software · Flutter (Android e iOS) · Pagamentos TEF/POS · IoT',
   tagline:
     'Desenvolvo software que conecta aplicativos ao mundo físico: maquininhas de cartão, totens de autoatendimento, lockers inteligentes e dispositivos IoT, com o pagamento funcionando de ponta a ponta.',
   about: [

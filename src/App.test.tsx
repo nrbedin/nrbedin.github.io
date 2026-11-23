@@ -3,6 +3,7 @@ import userEvent from '@testing-library/user-event'
 import { App } from './App'
 import { navigation } from './content/navigation'
 import { profile } from './content/profile'
+import { cases } from './content/cases'
 import { skills } from './content/skills'
 
 describe('App', () => {
@@ -33,6 +34,27 @@ describe('App', () => {
     for (const group of skills) {
       expect(screen.getByRole('heading', { level: 3, name: group.group })).toBeInTheDocument()
     }
+  })
+
+  it('mostra todos os estudos de caso, com diagramas acessíveis', () => {
+    render(<App />)
+    for (const study of cases) {
+      expect(screen.getByRole('heading', { level: 3, name: study.title })).toBeInTheDocument()
+    }
+    expect(
+      screen.getByRole('img', { name: /Arquitetura do checkout multi-gateway/ }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('img', { name: /Arquitetura do controle de lockers/ }),
+    ).toBeInTheDocument()
+  })
+
+  it('o botão principal leva aos estudos de caso', () => {
+    render(<App />)
+    expect(screen.getByRole('link', { name: 'Ver estudos de caso' })).toHaveAttribute(
+      'href',
+      '#casos',
+    )
   })
 
   it('links externos abrem em nova aba com rel seguro', () => {
