@@ -1,6 +1,6 @@
 import type { FeaturedProject, StudyProject } from './types'
 
-// Projetos novos (docs/BRIEFING.md, seção 6). Troque `published` para true
+// Projetos de exemplo. Troque `published` para true
 // quando o repositório estiver público, com README e testes.
 export const featuredProjects: FeaturedProject[] = [
   {

@@ -56,4 +56,4 @@ O workflow `.github/workflows/deploy.yml` roda formatação, lint, tipos, testes
 
 ## Histórico
 
-A versão anterior do portfólio (Flutter Web) está preservada na branch `legacy-flutter`. A especificação e o andamento do projeto estão em [docs/BRIEFING.md](docs/BRIEFING.md).
+A versão anterior do portfólio (Flutter Web) está preservada na branch `legacy-flutter`.

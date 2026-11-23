@@ -8,3 +8,6 @@ coverage/
 !.vscode/extensions.json
 .idea/
 dist-ssr/
+
+# Anotações privadas (briefing do projeto fica só na máquina)
+docs/
