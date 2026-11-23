@@ -5,7 +5,7 @@ export const profile = {
   tagline:
     'Desenvolvo software que conecta aplicativos ao mundo físico: maquininhas de cartão, totens de autoatendimento, lockers inteligentes e dispositivos IoT, com o pagamento funcionando de ponta a ponta.',
   about: [
-    'Atuo com Flutter e Dart para Android e iOS, código nativo Android em Java e automações em Node.js, do levantamento de requisitos e da arquitetura até a publicação nas lojas e a sustentação em produção.',
+    'Atuo com Flutter e Dart para Android e iOS, código nativo Android em Java e automações em Node.js, do levantamento de requisitos e da arquitetura até a publicação e a manutenção dos apps na Google Play e na App Store, e a sustentação em produção.',
     'Projetei a camada de abstração que permite a um mesmo app operar com seis hardwares de pagamento, conduzi a homologação de um aplicativo no marketplace Clover da América Latina e desenvolvo comunicação de baixo nível com hardware (UART, JNI/C, Bluetooth e MQTT).',
     'Os 9 anos anteriores em qualidade de software se refletem em entregas testáveis, bem documentadas e pensadas para falhar com segurança. Graduada em Ciência da Computação e pós-graduada em Arquitetura de Software.',
   ],

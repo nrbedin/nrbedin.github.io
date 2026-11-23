@@ -26,6 +26,13 @@ export const experience: ExperienceGroup[] = [
             ],
           },
           {
+            title: 'Publicação nas lojas e iOS',
+            items: [
+              'Publicação e manutenção contínua dos aplicativos Android e iOS na Google Play e na App Store, mantendo as versões atualizadas e de acordo com as exigências de cada loja.',
+              'Validação e ajustes de código específicos para iOS, para que os apps Flutter funcionem da mesma forma nas duas plataformas.',
+            ],
+          },
+          {
             title: 'Totem de autoatendimento para lojas autônomas',
             items: [
               'App de checkout self-service para terminais Android POS de diversos fabricantes: Gertec, Sunmi, Positivo, Tectoy, Clover, Elgin e PagSeguro.',
