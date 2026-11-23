@@ -85,9 +85,9 @@ describe('App', () => {
   it('o botão de tema alterna entre claro e escuro', async () => {
     const user = userEvent.setup()
     render(<App />)
-    await user.click(screen.getByRole('button', { name: 'Ativar tema claro' }))
+    await user.click(screen.getByRole('button', { name: 'Alternar entre tema claro e escuro' }))
     expect(document.documentElement.dataset.theme).toBe('light')
-    await user.click(screen.getByRole('button', { name: 'Ativar tema escuro' }))
+    await user.click(screen.getByRole('button', { name: 'Alternar entre tema claro e escuro' }))
     expect(document.documentElement.dataset.theme).toBe('dark')
   })
 })
