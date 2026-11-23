@@ -34,6 +34,12 @@ export function Projects() {
                     Repositório
                     <span className="visually-hidden"> de {project.name} (abre em nova aba)</span>
                   </a>
+                  {project.pubdev && (
+                    <a href={project.pubdev} target="_blank" rel="noopener noreferrer">
+                      pub.dev
+                      <span className="visually-hidden"> de {project.name} (abre em nova aba)</span>
+                    </a>
+                  )}
                   {project.demo && (
                     <a href={project.demo} target="_blank" rel="noopener noreferrer">
                       Demo

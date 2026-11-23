@@ -72,6 +72,8 @@ export interface FeaturedProject {
   stack: string[]
   repo: string
   demo?: string
+  /** Página do pacote no pub.dev, se houver. */
+  pubdev?: string
   status: ProjectStatus
   /** Só aparece no site quando true (depois que o repositório existir). */
   published: boolean

@@ -4,6 +4,17 @@ import type { FeaturedProject, StudyProject } from './types'
 // quando o repositório estiver público, com README e testes.
 export const featuredProjects: FeaturedProject[] = [
   {
+    id: 'intl-phone-number-countries',
+    name: 'intl_phone_number_countries',
+    description:
+      'Pacote Flutter publicado no pub.dev para máscara e interpretação de números de telefone de vários países. Adaptado do intl_phone_number_input (MIT) para uma necessidade de produção.',
+    stack: ['Dart', 'Flutter', 'dlibphonenumber'],
+    repo: 'https://github.com/nrbedin/intl_phone_number_countries',
+    pubdev: 'https://pub.dev/packages/intl_phone_number_countries',
+    status: 'estável',
+    published: true,
+  },
+  {
     id: 'pix-brcode',
     name: 'pix_brcode',
     description:

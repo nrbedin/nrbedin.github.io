@@ -40,7 +40,7 @@ export const cases: CaseStudy[] = [
   },
   {
     id: 'lockers',
-    title: 'Abrir um armário a partir do celular',
+    title: 'Comandar travas de lockers no local e a distância',
     variant: 'full',
     context:
       'Lockers inteligentes para guardar e retirar objetos, controlados por um app Flutter em modo kiosk e também remotamente.',
