@@ -20,8 +20,27 @@
 }
 
 .meta {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
   margin: 0;
   color: var(--color-text-muted);
+}
+
+.description {
+  font-size: 0.95rem;
+  margin: 12px 0 0;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+}
+
+@media (max-width: 760px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
 }
 
 .subheading {
@@ -29,16 +48,22 @@
   margin: 0 0 12px;
 }
 
-.certificates {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
-  gap: 8px 24px;
+.list {
+  list-style: none;
   margin: 0;
-  padding-left: 20px;
+  padding: 0;
+  display: grid;
+  gap: 12px;
 }
 
-.year {
+.itemTitle {
+  display: block;
+  font-weight: 500;
+}
+
+.itemMeta {
+  display: block;
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--color-text-muted);
 }
