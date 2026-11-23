@@ -62,3 +62,24 @@ export interface CaseStudy {
   technologies: string[]
   diagram?: DiagramId
 }
+
+export type ProjectStatus = 'estável' | 'em evolução'
+
+export interface FeaturedProject {
+  id: string
+  name: string
+  description: string
+  stack: string[]
+  repo: string
+  demo?: string
+  status: ProjectStatus
+  /** Só aparece no site quando true (depois que o repositório existir). */
+  published: boolean
+}
+
+export interface StudyProject {
+  name: string
+  description: string
+  stack: string[]
+  repo: string
+}

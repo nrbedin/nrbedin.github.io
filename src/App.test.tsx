@@ -4,6 +4,7 @@ import { App } from './App'
 import { navigation } from './content/navigation'
 import { profile } from './content/profile'
 import { cases } from './content/cases'
+import { publishedProjects, studyProjects } from './content/projects'
 import { skills } from './content/skills'
 
 describe('App', () => {
@@ -47,6 +48,19 @@ describe('App', () => {
     expect(
       screen.getByRole('img', { name: /Arquitetura do controle de lockers/ }),
     ).toBeInTheDocument()
+  })
+
+  it('mostra os projetos de estudo e esconde destaques não publicados', () => {
+    render(<App />)
+    for (const project of studyProjects) {
+      expect(screen.getByRole('link', { name: new RegExp(project.name) })).toHaveAttribute(
+        'href',
+        project.repo,
+      )
+    }
+    const destaque = screen.queryByRole('heading', { name: 'Projetos em destaque' })
+    if (publishedProjects().length === 0) expect(destaque).toBeNull()
+    else expect(destaque).toBeInTheDocument()
   })
 
   it('o botão principal leva aos estudos de caso', () => {
